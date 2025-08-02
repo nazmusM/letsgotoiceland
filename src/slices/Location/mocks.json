@@ -1,0 +1,152 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"information": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Sint mollit ullamco aute. Adipisicing consectetur duis tempor sit incididunt ut ipsum. Excepteur non occaecat cupidatat dolor elit non."
+						}
+					}
+				]
+			},
+			"start_pickup_time": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Aute ipsum ullamco quis mollit excepteur magna."
+						}
+					}
+				]
+			},
+			"start_pickup_point": {
+				"position": {
+					"lat": 48.8841267,
+					"lng": 2.3300579
+				},
+				"__TYPE__": "GeoPointContent"
+			},
+			"end_info": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ex ad id commodo."
+						}
+					}
+				]
+			},
+			"start_info": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Adipisicing ut magna tempor dolore aliquip consectetur cupidatat pariatur reprehenderit aliqua. Et ipsum elit Lorem."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "locationPickupDropoff",
+		"primary": {
+			"information": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Do id qui tempor ut fugiat voluptate. Sit amet Lorem minim."
+						}
+					}
+				]
+			},
+			"distance_reykjavic": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Incididunt laboris veniam ullamco. Lorem laborum qui ut aliquip enim aliquip labore dolor adipisicing."
+						}
+					}
+				]
+			},
+			"start_geopoint": {
+				"position": {
+					"lat": 48.8841267,
+					"lng": 2.3300579
+				},
+				"__TYPE__": "GeoPointContent"
+			},
+			"start_info": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Nulla incididunt labore enim excepteur commodo non tempor cillum do amet adipisicing deserunt nulla veniam aute. Pariatur commodo dolor nulla Lorem culpa minim. Consequat esse velit id aute sint duis commodo Lorem voluptate eu sit nostrud sunt."
+						}
+					}
+				]
+			},
+			"start_time": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Pariatur ullamco est consequat est ea dolore est in culpa aliqua adipisicing et esse quis consequat. Fugiat id voluptate consequat velit quis nisi eiusmod sit ut."
+						}
+					}
+				]
+			},
+			"end_geopoint": {
+				"position": {
+					"lat": 48.8583736,
+					"lng": 2.2922926
+				},
+				"__TYPE__": "GeoPointContent"
+			},
+			"end_info": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Exercitation nostrud culpa mollit magna tempor id sint officia."
+						}
+					}
+				]
+			},
+			"end_time": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Laboris sit consequat tempor dolore minim irure do voluptate consectetur cillum qui. Sunt aliqua dolor incididunt officia incididunt. Cillum non ipsum Lorem nulla officia id cupidatat Lorem labore qui."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

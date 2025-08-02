@@ -1,0 +1,43 @@
+{
+  "id": "welcome_banner",
+  "type": "SharedSlice",
+  "name": "WelcomeBanner",
+  "description": "WelcomeBanner",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "message": {
+          "type": "StructuredText",
+          "config": {
+            "label": "message",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "cta_name": {
+          "type": "Text",
+          "config": {
+            "label": "CTA Name",
+            "placeholder": ""
+          }
+        },
+        "cta_link": {
+          "type": "Link",
+          "config": {
+            "label": "CTA link",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

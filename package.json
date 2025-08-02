@@ -1,0 +1,43 @@
+{
+  "name": "letsgotoiceland",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/fetchData.js && next dev",
+    "build": "node scripts/fetchData.js && rm -rf .next/cache/fetch-cache && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "slicemachine": "start-slicemachine"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.18",
+    "@prismicio/client": "^7.3.1",
+    "@prismicio/helpers": "^2.3.9",
+    "@prismicio/next": "^1.5.0",
+    "@prismicio/react": "^2.7.3",
+    "@vis.gl/react-google-maps": "^0.7.1",
+    "lucide-react": "^0.427.0",
+    "next": "^14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-photo-album": "^2.4.0",
+    "ts-node": "^10.9.2",
+    "yet-another-react-lightbox": "^3.19.0"
+  },
+  "devDependencies": {
+    "@slicemachine/adapter-next": "^0.3.45",
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "prettier": "^3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "slice-machine-ui": "^2.4.1",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}

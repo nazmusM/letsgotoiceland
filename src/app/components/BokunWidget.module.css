@@ -1,0 +1,9 @@
+#calendar-widget h2 {
+  margin: 0;
+  padding: 10px;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #fff;
+  background-color: #3f51b5;
+  text-align: center;
+}

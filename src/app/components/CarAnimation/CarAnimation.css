@@ -1,0 +1,16 @@
+.car {
+  position: absolute;
+  width: 50px;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+.road-container {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  left: 15%;
+  height: 100%;
+  width: 100%;
+
+  /* transform: translate(-50%, -50%); */
+}

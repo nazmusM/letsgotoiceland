@@ -1,0 +1,36 @@
+{
+  "id": "experience",
+  "type": "SharedSlice",
+  "name": "Experience",
+  "description": "Experience",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "experience": {
+          "type": "Link",
+          "config": {
+            "label": "experience",
+            "select": "document",
+            "customtypes": [
+              "experience"
+            ]
+          }
+        },
+        "discount_code": {
+          "type": "Text",
+          "config": {
+            "label": "Discount code",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

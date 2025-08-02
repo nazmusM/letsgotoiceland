@@ -1,0 +1,58 @@
+{
+  "id": "triptych",
+  "type": "SharedSlice",
+  "name": "Triptych",
+  "description": "Triptych",
+  "variations": [
+    {
+      "id": "default",
+      "name": "landmarks",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "link",
+            "select": "document",
+            "customtypes": [
+              "landmark"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "promoted",
+      "name": "Promoted",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "title",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "link",
+            "select": "document",
+            "customtypes": [
+              "advertisement"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

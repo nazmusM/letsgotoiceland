@@ -1,0 +1,57 @@
+{
+  "id": "steps_block",
+  "type": "SharedSlice",
+  "name": "StepsBlock",
+  "description": "StepsBlock",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "title",
+            "placeholder": ""
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl,heading2"
+          }
+        }
+      },
+      "items": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Step title",
+            "placeholder": ""
+          }
+        },
+        "svg": {
+          "type": "Text",
+          "config": {
+            "label": "Step svg",
+            "placeholder": ""
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "Step description",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

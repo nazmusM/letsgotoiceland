@@ -1,0 +1,60 @@
+{
+  "id": "advertisement",
+  "type": "SharedSlice",
+  "name": "Advertisement",
+  "description": "Advertisement",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "advertisement": {
+          "type": "Link",
+          "config": {
+            "label": "advertisement",
+            "select": "document",
+            "customtypes": [
+              "advertisement"
+            ]
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "double",
+      "name": "Double",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "advertisement": {
+          "type": "Link",
+          "config": {
+            "label": "Advertisement",
+            "select": "document",
+            "customtypes": [
+              "advertisement"
+            ]
+          }
+        },
+        "advertisement2": {
+          "type": "Link",
+          "config": {
+            "label": "Advertisement 2",
+            "select": "document",
+            "customtypes": [
+              "advertisement"
+            ]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

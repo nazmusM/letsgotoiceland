@@ -1,0 +1,162 @@
+{
+  "id": "location",
+  "type": "SharedSlice",
+  "name": "Location",
+  "description": "Location",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Location - Meet",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "information": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Information",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "distance_reykjavic": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Distance from Reykjavic",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,hyperlink"
+          }
+        },
+        "start_geopoint": {
+          "type": "GeoPoint",
+          "config": {
+            "label": "Start/Pickup GeoPoint"
+          }
+        },
+        "start_info": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Start/Pickup Info",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,hyperlink"
+          }
+        },
+        "start_time": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Start/Pickup Time",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,hyperlink"
+          }
+        },
+        "end_geopoint": {
+          "type": "GeoPoint",
+          "config": {
+            "label": "End/Dropoff GeoPoint"
+          }
+        },
+        "end_info": {
+          "type": "StructuredText",
+          "config": {
+            "label": "End/Dropoff Info",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,hyperlink"
+          }
+        },
+        "end_time": {
+          "type": "StructuredText",
+          "config": {
+            "label": "End/Dropoff Time",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,hyperlink"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "locationPickupDropoff",
+      "name": "Location - Pickup Dropoff",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "information": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Information",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "distance_reykjavic": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Distance from Reykjavic",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,hyperlink"
+          }
+        },
+        "start_geopoint": {
+          "type": "GeoPoint",
+          "config": {
+            "label": "Start/Pickup GeoPoint"
+          }
+        },
+        "start_info": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Start/Pickup Info",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,hyperlink"
+          }
+        },
+        "start_time": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Start/Pickup Time",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,hyperlink"
+          }
+        },
+        "end_geopoint": {
+          "type": "GeoPoint",
+          "config": {
+            "label": "End/Dropoff GeoPoint"
+          }
+        },
+        "end_info": {
+          "type": "StructuredText",
+          "config": {
+            "label": "End/Dropoff Info",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,hyperlink"
+          }
+        },
+        "end_time": {
+          "type": "StructuredText",
+          "config": {
+            "label": "End/Dropoff Time",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,hyperlink"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

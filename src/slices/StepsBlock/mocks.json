@@ -1,0 +1,39 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "similar",
+				"type": "Text"
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Nulla cupidatat voluptate labore exercitation dolor id nulla commodo officia reprehenderit duis. Deserunt dolore exercitation eu. Lorem mollit sunt incididunt pariatur sunt amet consectetur esse do eiusmod ipsum exercitation id eiusmod."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"row_title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "hold",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	}
+]

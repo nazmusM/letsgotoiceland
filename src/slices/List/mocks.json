@@ -1,0 +1,38 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"multi_column": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"icon_type": {
+				"__TYPE__": "FieldContent",
+				"value": "excluded",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"content",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Velit nulla pariatur ad proident veniam labore. Aliqua ullamco amet pariatur. Cupidatat ullamco velit minim laborum mollit exercitation pariatur ut commodo et mollit Lorem elit."
+									}
+								}
+							]
+						}
+					]
+				]
+			}
+		]
+	}
+]

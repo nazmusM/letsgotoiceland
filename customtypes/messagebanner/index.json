@@ -1,0 +1,42 @@
+{
+  "id": "messagebanner",
+  "label": "MessageBanner",
+  "format": "custom",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "uid",
+          "placeholder": ""
+        }
+      },
+      "message": {
+        "type": "Text",
+        "config": {
+          "label": "Message",
+          "placeholder": ""
+        }
+      },
+      "link": {
+        "type": "Link",
+        "config": {
+          "label": "link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "display": {
+        "type": "Boolean",
+        "config": {
+          "label": "display",
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": false
+        }
+      }
+    }
+  }
+}

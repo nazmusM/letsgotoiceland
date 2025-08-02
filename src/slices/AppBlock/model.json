@@ -1,0 +1,98 @@
+{
+  "id": "app_block",
+  "type": "SharedSlice",
+  "name": "AppBlock",
+  "description": "AppBlock",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "title",
+            "placeholder": ""
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "app_store_link": {
+          "type": "Link",
+          "config": {
+            "label": "App Store link",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "select": null
+          }
+        },
+        "google_play_link": {
+          "type": "Link",
+          "config": {
+            "label": "Google Play link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "app_store_icon": {
+          "type": "Image",
+          "config": {
+            "label": "App Store icon",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "google_play_icon": {
+          "type": "Image",
+          "config": {
+            "label": "Google Play icon",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Row title",
+            "placeholder": ""
+          }
+        },
+        "svg": {
+          "type": "Text",
+          "config": {
+            "label": "Row svg",
+            "placeholder": ""
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "Row description",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

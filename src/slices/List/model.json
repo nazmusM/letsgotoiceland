@@ -1,0 +1,60 @@
+{
+  "id": "list",
+  "type": "SharedSlice",
+  "name": "List",
+  "description": "List",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2,heading3,heading4,heading5,heading6,strong,em,paragraph,hyperlink"
+          }
+        },
+        "multi_column": {
+          "type": "Boolean",
+          "config": {
+            "label": "multi column",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "icon_type": {
+          "type": "Select",
+          "config": {
+            "label": "icon type",
+            "placeholder": "",
+            "options": [
+              "regular",
+              "included",
+              "excluded"
+            ],
+            "default_value": "regular"
+          }
+        }
+      },
+      "items": {
+        "content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "content",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "list-item,paragraph"
+          }
+        }
+      }
+    }
+  ]
+}
