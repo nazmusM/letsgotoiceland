@@ -104,10 +104,10 @@ for (const location of locations) {
 // Construct slice object
 const categoryGallerySlice = {
   slice_type: "category_gallery",
-  id: "unique-id", // provide a unique id
+  id: "unique-id",
   primary: {
     title: "Categories",
-    subtitle: [/* subtitle content as needed */],
+    subtitle: ,
   },
   state: {
     categories,
