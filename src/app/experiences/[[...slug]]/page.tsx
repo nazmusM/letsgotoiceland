@@ -9,6 +9,12 @@ import { PrismicRichText, SliceZone } from "@prismicio/react";
 import { Content } from "@prismicio/client";
 import { formatSiblings } from "@/utils";
 import { components } from "@/slices";
+import CategoryGallery from '@/slices/CategoryGallery';
+import { client } from "@/lib/prismicClient";
+import { PrismicDocument } from "@/lib/enums";
+import { getFilteredExperiences } from "@/lib/queries/experiences";
+import { categoryGraphQuery } from "@/lib/queries/graphs";
+
 
 export default async function Page({
   params,
@@ -17,6 +23,7 @@ export default async function Page({
   params: { slug: string[] };
   searchParams: { page?: string };
 }) {
+  
   const page =
     (searchParams.page && +searchParams.page && +searchParams.page) || 1;
 
@@ -45,6 +52,75 @@ export default async function Page({
 
   const archiveData = data.archive?.data as unknown as ArchiveData;
 
+const isCategoryView = params.slug && params.slug[0] == 'category';
+
+  const { results: categories } = await client.getByType<Content.CategoryDocument>(
+  PrismicDocument.CATEGORY,
+  {
+    pageSize: 12,
+    graphQuery: categoryGraphQuery,
+  }
+);
+
+const { results: locations } = await client.getByType<Content.LocationDocument>(
+  PrismicDocument.LOCATION,
+  {
+    pageSize: 12,
+    graphQuery: categoryGraphQuery,
+  }
+);
+
+const categoryCount: { [key: string]: number } = {};
+const locationCount: { [key: string]: number } = {};
+
+for (const category of categories) {
+  const categoryExperiences = await getFilteredExperiences(
+    {
+      type: PrismicDocument.CATEGORY,
+      slug: category.uid,
+      filters: [],
+      pagination: { page: 1, pageSize: 12 },
+    },
+    false
+  );
+  categoryCount[category.uid] = categoryExperiences.experiences.results.length;
+}
+
+for (const location of locations) {
+  const locationExperiences = await getFilteredExperiences(
+    {
+      type: PrismicDocument.LOCATION,
+      slug: location.uid,
+      filters: [],
+      pagination: { page: 1, pageSize: 12 },
+    },
+    false
+  );
+  locationCount[location.uid] = locationExperiences.experiences.results.length;
+}
+
+
+
+// Construct slice object
+const categoryGallerySlice = {
+  slice_type: "category_gallery",
+  id: "unique-id", // provide a unique id
+  primary: {
+    title: "Categories",
+    subtitle: [/* subtitle content as needed */],
+  },
+  state: {
+    categories,
+    locations,
+    activities: {
+      categoryActivities: categoryCount,
+      locationActivities: locationCount,
+    },
+  },
+};
+
+
+
   return (
     <section>
       <div className="mx-auto px-2 md:max-w-[1200px] md:px-0">
@@ -62,12 +138,20 @@ export default async function Page({
             siblings={formatSiblings(siblingDocuments)}
           />
         )}
-        <ExperienceGrid experiences={data.experiences} />
-        <PaginationFooter
-          baseURL={`/experiences/${(params.slug && params.slug.join("/")) || ""}`}
-          currentPage={page}
-          totalPages={data.experiences.total_pages}
-        />
+        {
+          isCategoryView ? (
+             <CategoryGallery slice={categoryGallerySlice} />
+          )  : (
+            <>
+              <ExperienceGrid experiences={data.experiences} />
+              <PaginationFooter
+              baseURL={`/experiences/${(params.slug && params.slug.join("/")) || ""}`}
+              currentPage={page}
+              totalPages={data.experiences.total_pages}
+              />
+        </>
+          )
+        }
       </div>
 
       {archiveData && (
