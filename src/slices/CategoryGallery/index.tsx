@@ -148,7 +148,7 @@ const CategoryGallery = ({
                 id="gallery-container"
                 className="group relative flex flex-1 flex-col overflow-hidden rounded-2xl border border-borderGray hover:border-[#cccccc] md:flex-row md:place-items-center md:p-[0.75rem] lg:flex-row lg:place-items-center lg:p-[0.75rem]"
                 key={record.uid}
-                href={`/experiences/${query === "City" ? "city" : "category"}/${record.uid}#${slice.id}`}
+                href={`/experiences/${query === "City" ? "location" : "category"}/${record.uid}#${slice.id}`}
                 scroll={false}
               >
                 <PrismicNextImage
